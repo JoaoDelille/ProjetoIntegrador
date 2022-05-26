@@ -1,0 +1,1429 @@
+{
+    "concept":{
+        "categories":{
+            "name":"New Concept", 
+            "pairs":[[1,0.14286],[7,1]], 
+            "categories":[
+                {
+                    "name":"Number of Passengers", 
+                    "pairs":[[1,0.11111,9],[9,1,0.11111],[0.11111,9,1]], 
+                    "weight":0.12500109374316412
+                }, 
+                {
+                    "name":"Powerplant", 
+                    "pairs":[[1,0.125],[8,1]], 
+                    "categories":[
+                        {
+                            "name":"Max Power Installed", 
+                            "pairs":[[1,0.14286,9],[7,1,9],[0.11111,0.11111,1]], 
+                            "weight":0.097222100695204
+                        }, 
+                        {
+                            "name":"Pollutant Emissions", 
+                            "pairs":[[1,4,0.11111],[0.25,1,0.11111],[9,9,1]], 
+                            "weight":0.77777680556163187
+                        }
+                    ], 
+                    "weight":0.87499890625683585
+                }
+            ], 
+            "weight":1
+        }, 
+        "designs":[
+            {
+                "name":"Helicopter", 
+                "weight":0.17168810155270697
+            }, 
+            {
+                "name":"Aircraft", 
+                "weight":0.15837102793195573
+            }, 
+            {
+                "name":"Paper Plane", 
+                "weight":0.66994087051533735
+            }
+        ]
+    }, 
+    "mission":{
+        "segments":[
+            {
+                "name":"Taxi at Hospital", 
+                "type":"taxi", 
+                "energy_network":"Hybrid Energy Network", 
+                "time":120, 
+                "altitude":0, 
+                "temperature":288.15, 
+                "speed_sound":340.29412435568145, 
+                "pressure":101325, 
+                "density":1.225, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Vertical Takeoff", 
+                "type":"vertical_climb", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "velocity":3.5, 
+                "altitude":[0,50], 
+                "temperature":[288.15,287.825], 
+                "speed_sound":[340.29412435568145,340.10216393092821], 
+                "pressure":[101325,100725.783014007], 
+                "density":[1.225,1.219130619353344], 
+                "time":14.285714285714286, 
+                "range":0
+            }, 
+            {
+                "name":"Hover", 
+                "type":"hover", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "altitude":50, 
+                "time":5, 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Vertical to Horizontal Transition", 
+                "type":"transition", 
+                "energy_network":"Hybrid Energy Network", 
+                "altitude":50, 
+                "transition_angle":90, 
+                "time":12, 
+                "velocity":[0,65.6], 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "range":393.59999999999997
+            }, 
+            {
+                "name":"Climb", 
+                "type":"climb", 
+                "energy_network":"Hybrid Energy Network", 
+                "velocity":65.6, 
+                "altitude":[50,2500], 
+                "angle":7.2, 
+                "temperature":[287.825,271.9], 
+                "speed_sound":[340.10216393092821,330.55957563803832], 
+                "pressure":[100725.783014007,74682.535880204639], 
+                "density":[1.219130619353344,0.95685900597895046], 
+                "time":297.98609605366948, 
+                "range":19393.746966349277
+            }, 
+            {
+                "name":"Horizontal Cruise", 
+                "type":"cruise", 
+                "energy_network":"Hybrid Energy Network @Cruise", 
+                "velocity":100, 
+                "range":200000, 
+                "altitude":2500, 
+                "temperature":271.9, 
+                "speed_sound":330.55957563803832, 
+                "pressure":74682.535880204639, 
+                "density":0.95685900597895046, 
+                "time":2000
+            }, 
+            {
+                "name":"Approach", 
+                "type":"descent", 
+                "energy_network":"Hybrid Energy Network", 
+                "velocity":-70, 
+                "altitude":[2500,50], 
+                "angle":-7, 
+                "temperature":[271.9,287.825], 
+                "speed_sound":[330.55957563803832,340.10216393092821], 
+                "pressure":[74682.535880204639,100725.783014007], 
+                "density":[0.95685900597895046,1.219130619353344], 
+                "time":287.1928166843777, 
+                "range":19953.648748537751
+            }, 
+            {
+                "name":"Horizontal to Vertical Transition", 
+                "type":"transition", 
+                "energy_network":"Hybrid Energy Network", 
+                "altitude":50, 
+                "transition_angle":40, 
+                "time":12, 
+                "velocity":[70,0], 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "range":420
+            }, 
+            {
+                "name":"Vertical Landing at Site", 
+                "type":"vertical_descent", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "velocity":-4, 
+                "altitude":[50,0], 
+                "temperature":[287.825,288.15], 
+                "speed_sound":[340.10216393092821,340.29412435568145], 
+                "pressure":[100725.783014007,101325], 
+                "density":[1.219130619353344,1.225], 
+                "time":12.5, 
+                "range":0
+            }, 
+            {
+                "name":"Passenger Tending For Pickup", 
+                "type":"landing", 
+                "energy_network":"Hybrid Energy Network", 
+                "time":1800, 
+                "altitude":0, 
+                "temperature":288.15, 
+                "speed_sound":340.29412435568145, 
+                "pressure":101325, 
+                "density":1.225, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Passenger Collection", 
+                "type":"load_step", 
+                "mass":100, 
+                "time":0, 
+                "altitude":0, 
+                "temperature":288.15, 
+                "speed_sound":340.29412435568145, 
+                "pressure":101325, 
+                "density":1.225, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Vertical Takeoff", 
+                "type":"vertical_climb", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "velocity":4, 
+                "altitude":[0,50], 
+                "temperature":[288.15,287.825], 
+                "speed_sound":[340.29412435568145,340.10216393092821], 
+                "pressure":[101325,100725.783014007], 
+                "density":[1.225,1.219130619353344], 
+                "time":12.5, 
+                "range":0
+            }, 
+            {
+                "name":"Hover", 
+                "type":"hover", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "altitude":50, 
+                "time":5, 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Vertical to Horizontal Transition", 
+                "type":"transition", 
+                "energy_network":"Hybrid Energy Network", 
+                "altitude":50, 
+                "transition_angle":60, 
+                "time":12, 
+                "velocity":[0,65.6], 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "range":393.59999999999997
+            }, 
+            {
+                "name":"Climb", 
+                "type":"climb", 
+                "energy_network":"Hybrid Energy Network", 
+                "velocity":65.6, 
+                "altitude":[50,2500], 
+                "angle":7.2, 
+                "temperature":[287.825,271.9], 
+                "speed_sound":[340.10216393092821,330.55957563803832], 
+                "pressure":[100725.783014007,74682.535880204639], 
+                "density":[1.219130619353344,0.95685900597895046], 
+                "time":297.98609605366948, 
+                "range":19393.746966349277
+            }, 
+            {
+                "name":"Horizontal Cruise", 
+                "type":"cruise", 
+                "energy_network":"Hybrid Energy Network @Cruise", 
+                "velocity":100, 
+                "range":200000, 
+                "altitude":2500, 
+                "temperature":271.9, 
+                "speed_sound":330.55957563803832, 
+                "pressure":74682.535880204639, 
+                "density":0.95685900597895046, 
+                "time":2000
+            }, 
+            {
+                "name":"Approach", 
+                "type":"descent", 
+                "energy_network":"Hybrid Energy Network", 
+                "velocity":-70, 
+                "altitude":[2500,50], 
+                "angle":-7, 
+                "temperature":[271.9,287.825], 
+                "speed_sound":[330.55957563803832,340.10216393092821], 
+                "pressure":[74682.535880204639,100725.783014007], 
+                "density":[0.95685900597895046,1.219130619353344], 
+                "time":287.1928166843777, 
+                "range":19953.648748537751
+            }, 
+            {
+                "name":"Horizontal to Vertical Transition", 
+                "type":"transition", 
+                "energy_network":"Hybrid Energy Network", 
+                "altitude":50, 
+                "transition_angle":40, 
+                "time":12, 
+                "velocity":[70,0], 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "range":420
+            }, 
+            {
+                "name":"Vertical Landing at Hospital", 
+                "type":"vertical_descent", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "velocity":-4, 
+                "altitude":[50,0], 
+                "temperature":[287.825,288.15], 
+                "speed_sound":[340.10216393092821,340.29412435568145], 
+                "pressure":[100725.783014007,101325], 
+                "density":[1.219130619353344,1.225], 
+                "time":12.5, 
+                "range":0
+            }, 
+            {
+                "name":"Passenger Tending For Unloading", 
+                "type":"landing", 
+                "energy_network":"Hybrid Energy Network", 
+                "time":550, 
+                "altitude":0, 
+                "temperature":288.15, 
+                "speed_sound":340.29412435568145, 
+                "pressure":101325, 
+                "density":1.225, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Passenger Unloading Step", 
+                "type":"load_step", 
+                "mass":-100, 
+                "time":0, 
+                "altitude":0, 
+                "temperature":288.15, 
+                "speed_sound":340.29412435568145, 
+                "pressure":101325, 
+                "density":1.225, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Vertical Takeoff", 
+                "type":"vertical_climb", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "velocity":3.5, 
+                "altitude":[0,50], 
+                "temperature":[288.15,287.825], 
+                "speed_sound":[340.29412435568145,340.10216393092821], 
+                "pressure":[101325,100725.783014007], 
+                "density":[1.225,1.219130619353344], 
+                "time":14.285714285714286, 
+                "range":0
+            }, 
+            {
+                "name":"Hover", 
+                "type":"hover", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "altitude":50, 
+                "time":5, 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "velocity":0, 
+                "range":0
+            }, 
+            {
+                "name":"Vertical to Horizontal Transition", 
+                "type":"transition", 
+                "energy_network":"Hybrid Energy Network", 
+                "altitude":50, 
+                "transition_angle":60, 
+                "time":12, 
+                "velocity":[0,65.6], 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "range":393.59999999999997
+            }, 
+            {
+                "name":"Climb", 
+                "type":"climb", 
+                "energy_network":"Hybrid Energy Network", 
+                "velocity":65.6, 
+                "altitude":[50,2500], 
+                "angle":7.2, 
+                "temperature":[287.825,271.9], 
+                "speed_sound":[340.10216393092821,330.55957563803832], 
+                "pressure":[100725.783014007,74682.535880204639], 
+                "density":[1.219130619353344,0.95685900597895046], 
+                "time":297.98609605366948, 
+                "range":19393.746966349277
+            }, 
+            {
+                "name":"Horizontal Cruise", 
+                "type":"cruise", 
+                "energy_network":"Hybrid Energy Network @Cruise", 
+                "velocity":100, 
+                "range":200000, 
+                "altitude":2500, 
+                "temperature":271.9, 
+                "speed_sound":330.55957563803832, 
+                "pressure":74682.535880204639, 
+                "density":0.95685900597895046, 
+                "time":2000
+            }, 
+            {
+                "name":"Approach", 
+                "type":"descent", 
+                "energy_network":"Hybrid Energy Network", 
+                "velocity":-70, 
+                "altitude":[2500,50], 
+                "angle":-7, 
+                "temperature":[271.9,287.825], 
+                "speed_sound":[330.55957563803832,340.10216393092821], 
+                "pressure":[74682.535880204639,100725.783014007], 
+                "density":[0.95685900597895046,1.219130619353344], 
+                "time":287.1928166843777, 
+                "range":19953.648748537751
+            }, 
+            {
+                "name":"Horizontal to Vertical Transition", 
+                "type":"transition", 
+                "energy_network":"Hybrid Energy Network", 
+                "altitude":50, 
+                "transition_angle":40, 
+                "time":12, 
+                "velocity":[70,0], 
+                "temperature":287.825, 
+                "speed_sound":340.10216393092821, 
+                "pressure":100725.783014007, 
+                "density":1.219130619353344, 
+                "range":420
+            }, 
+            {
+                "name":"Vertical Landing at Base", 
+                "type":"vertical_descent", 
+                "energy_network":"Electric Energy Network @ vertical flight", 
+                "velocity":-4, 
+                "altitude":[50,0], 
+                "temperature":[287.825,288.15], 
+                "speed_sound":[340.10216393092821,340.29412435568145], 
+                "pressure":[100725.783014007,101325], 
+                "density":[1.219130619353344,1.225], 
+                "time":12.5, 
+                "range":0
+            }, 
+            {
+                "name":"Final Post Landing Checkups", 
+                "type":"landing", 
+                "energy_network":"Hybrid Energy Network", 
+                "time":120, 
+                "altitude":0, 
+                "temperature":288.15, 
+                "speed_sound":340.29412435568145, 
+                "pressure":101325, 
+                "density":1.225, 
+                "velocity":0, 
+                "range":0
+            }
+        ], 
+        "time":10511.108166785571, 
+        "range":720482.98714466114
+    }, 
+    "vehicle":{
+        "components":[
+            {
+                "name":"Crew", 
+                "type":"mass.point", 
+                "mass":200
+            }, 
+            {
+                "name":"Passengers", 
+                "type":"mass.point", 
+                "mass":500
+            }, 
+            {
+                "name":"Avionics", 
+                "type":"mass.point", 
+                "mass":20
+            }, 
+            {
+                "name":"Payload Bay", 
+                "type":"mass.point", 
+                "mass":300
+            }, 
+            {
+                "name":"Fuselage", 
+                "type":"fuselage", 
+                "interf_factor":1, 
+                "diameter":2.95, 
+                "length":14, 
+                "mass":600, 
+                "area_wet":157.08748666112365, 
+                "segments":[
+                    {
+                        "name":"Taxi at Hospital", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0.015572618481326404, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0.010877946745102091, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0.009931289645275369, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0.0094453870162869071, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0.009833903069916659, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0.010771791354695351, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Site", 
+                        "base_drag_coefficient":0.0152210807991129, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Passenger Tending For Pickup", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Passenger Collection", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Hospital", 
+                        "base_drag_coefficient":0.0152210807991129, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Passenger Tending For Unloading", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Passenger Unloading Step", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Base", 
+                        "base_drag_coefficient":0.0152210807991129, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Final Post Landing Checkups", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }
+                ]
+            }, 
+            {
+                "name":"Main Wing", 
+                "type":"wing.main", 
+                "interf_factor":1, 
+                "aspect_ratio":14.095024, 
+                "mean_chord":2.013575, 
+                "oswald_efficiency":0.85, 
+                "airfoil":{
+                    "type":"naca0012", 
+                    "tc_max":0.12, 
+                    "xc_max":0.301, 
+                    "lift_slope_coefficient":6.4, 
+                    "cl_max":1.7
+                }, 
+                "sweep_le":10, 
+                "sweep_c4":15, 
+                "sweep_tc_max":20, 
+                "mass":400, 
+                "span":28.3813879508, 
+                "area_ref":57.148053243032109, 
+                "area_wet":116.54773978383969, 
+                "segments":[
+                    {
+                        "name":"Taxi at Hospital", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0.0028413231274204468, 
+                        "lift_slope_coefficient":5.2655798203087123
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0.007598340856671988, 
+                        "lift_slope_coefficient":5.2842360829942816
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0.00779297643107419, 
+                        "lift_slope_coefficient":5.3443954817924029
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0.0079730816310344278, 
+                        "lift_slope_coefficient":5.4608113665839388
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0.0077983814082182431, 
+                        "lift_slope_coefficient":5.3556486656519242
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0.007603322408336219, 
+                        "lift_slope_coefficient":5.2868690499603126
+                    }, 
+                    {
+                        "name":"Vertical Landing at Site", 
+                        "base_drag_coefficient":0.007619963916634661, 
+                        "lift_slope_coefficient":5.26564519916867
+                    }, 
+                    {
+                        "name":"Passenger Tending For Pickup", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }, 
+                    {
+                        "name":"Passenger Collection", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Hospital", 
+                        "base_drag_coefficient":0.007619963916634661, 
+                        "lift_slope_coefficient":5.26564519916867
+                    }, 
+                    {
+                        "name":"Passenger Tending For Unloading", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }, 
+                    {
+                        "name":"Passenger Unloading Step", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Base", 
+                        "base_drag_coefficient":0.007619963916634661, 
+                        "lift_slope_coefficient":5.26564519916867
+                    }, 
+                    {
+                        "name":"Final Post Landing Checkups", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":5.265366267083551
+                    }
+                ]
+            }, 
+            {
+                "name":"Horizontal Tail", 
+                "type":"wing.htail", 
+                "interf_factor":1, 
+                "aspect_ratio":1, 
+                "mean_chord":1, 
+                "oswald_efficiency":0.85, 
+                "airfoil":{
+                    "type":"naca0012", 
+                    "tc_max":0.15, 
+                    "xc_max":0.3, 
+                    "lift_slope_coefficient":6.2, 
+                    "cl_max":2
+                }, 
+                "sweep_le":10, 
+                "sweep_c4":15, 
+                "sweep_tc_max":20, 
+                "mass":0, 
+                "span":1, 
+                "area_ref":1, 
+                "area_wet":2.055, 
+                "segments":[
+                    {
+                        "name":"Taxi at Hospital", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":7.6207529892860829E-5, 
+                        "lift_slope_coefficient":1.4535316051518661
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0.00016203454381110663, 
+                        "lift_slope_coefficient":1.4542237995104441
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0.00016541255012993397, 
+                        "lift_slope_coefficient":1.4564129538883612
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0.0001688455291676477, 
+                        "lift_slope_coefficient":1.4604703572590441
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0.00016544755888170553, 
+                        "lift_slope_coefficient":1.4568153072166492
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0.00016205630398040047, 
+                        "lift_slope_coefficient":1.4543209760032776
+                    }, 
+                    {
+                        "name":"Vertical Landing at Site", 
+                        "base_drag_coefficient":7.3019770238166745E-5, 
+                        "lift_slope_coefficient":1.4535340420487906
+                    }, 
+                    {
+                        "name":"Passenger Tending For Pickup", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }, 
+                    {
+                        "name":"Passenger Collection", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Hospital", 
+                        "base_drag_coefficient":7.3019770238166745E-5, 
+                        "lift_slope_coefficient":1.4535340420487906
+                    }, 
+                    {
+                        "name":"Passenger Tending For Unloading", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }, 
+                    {
+                        "name":"Passenger Unloading Step", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Base", 
+                        "base_drag_coefficient":7.3019770238166745E-5, 
+                        "lift_slope_coefficient":1.4535340420487906
+                    }, 
+                    {
+                        "name":"Final Post Landing Checkups", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":1.453523644732462
+                    }
+                ]
+            }, 
+            {
+                "name":"Vertical Tail", 
+                "type":"wing.vtail", 
+                "interf_factor":1, 
+                "aspect_ratio":4.932669, 
+                "mean_chord":1.000445, 
+                "oswald_efficiency":0.85, 
+                "airfoil":{
+                    "type":"naca0012", 
+                    "tc_max":0.15, 
+                    "xc_max":0.3, 
+                    "lift_slope_coefficient":6.2, 
+                    "cl_max":2
+                }, 
+                "sweep_le":10, 
+                "sweep_c4":15, 
+                "sweep_tc_max":20, 
+                "mass":50, 
+                "span":4.934864037705, 
+                "area_ref":4.9370600522017787, 
+                "area_wet":10.145658407274656, 
+                "segments":[
+                    {
+                        "name":"Taxi at Hospital", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0.00037615746578388082, 
+                        "lift_slope_coefficient":4.014981118933675
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0.00079991147099484506, 
+                        "lift_slope_coefficient":4.02552459111363
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0.00081659011398045047, 
+                        "lift_slope_coefficient":4.0593601238853072
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0.00083353893733930718, 
+                        "lift_slope_coefficient":4.1241315715959761
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0.0008167632028165772, 
+                        "lift_slope_coefficient":4.0656616635032243
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0.00080001917147632534, 
+                        "lift_slope_coefficient":4.0270106647247683
+                    }, 
+                    {
+                        "name":"Vertical Landing at Site", 
+                        "base_drag_coefficient":0.00036042280550918588, 
+                        "lift_slope_coefficient":4.0150181092949353
+                    }, 
+                    {
+                        "name":"Passenger Tending For Pickup", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }, 
+                    {
+                        "name":"Passenger Collection", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Hospital", 
+                        "base_drag_coefficient":0.00036042280550918588, 
+                        "lift_slope_coefficient":4.0150181092949353
+                    }, 
+                    {
+                        "name":"Passenger Tending For Unloading", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }, 
+                    {
+                        "name":"Passenger Unloading Step", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }, 
+                    {
+                        "name":"Vertical Takeoff", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Hover", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical to Horizontal Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Climb", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal Cruise", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Approach", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Horizontal to Vertical Transition", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":0
+                    }, 
+                    {
+                        "name":"Vertical Landing at Base", 
+                        "base_drag_coefficient":0.00036042280550918588, 
+                        "lift_slope_coefficient":4.0150181092949353
+                    }, 
+                    {
+                        "name":"Final Post Landing Checkups", 
+                        "base_drag_coefficient":0, 
+                        "lift_slope_coefficient":4.0148602917234966
+                    }
+                ]
+            }, 
+            {
+                "name":"Turboshaft", 
+                "type":"engine.prop", 
+                "efficiency":0.8, 
+                "mass":200, 
+                "max_power":210000
+            }, 
+            {
+                "name":"4-stroke Piston Engine", 
+                "type":"engine.prop", 
+                "efficiency":0.8, 
+                "mass":100, 
+                "max_power":200000
+            }, 
+            {
+                "name":"Jet Engine", 
+                "type":"engine.jet", 
+                "mass":200, 
+                "max_power":120000
+            }, 
+            {
+                "name":"Battery", 
+                "type":"energy.electric", 
+                "specific_energy":576000, 
+                "efficiency":0.9, 
+                "reserve":0.2, 
+                "mass":158.49286282191534
+            }, 
+            {
+                "name":"Fuel Tank", 
+                "type":"energy.fuel", 
+                "reserve":0.06, 
+                "mass":431.87737864417761
+            }, 
+            {
+                "name":"Rotor", 
+                "type":"driver.rotor.main", 
+                "number":8, 
+                "number_blades":3, 
+                "radius":1.041124, 
+                "rotor_solidity":0.08, 
+                "induced_power_factor":1.15, 
+                "base_drag_coefficient":0.02, 
+                "tip_velocity":270, 
+                "efficiency":0.9, 
+                "mass":1
+            }, 
+            {
+                "name":"Propeller", 
+                "type":"driver.rotor", 
+                "number":8, 
+                "number_blades":8, 
+                "radius":0.8, 
+                "tip_velocity":270, 
+                "efficiency":0.9, 
+                "mass":1
+            }, 
+            {
+                "name":"Gearbox", 
+                "type":"gearbox", 
+                "efficiency":0.95, 
+                "mass":5
+            }, 
+            {
+                "name":"Generator", 
+                "type":"generator", 
+                "efficiency":0.96, 
+                "mass":50
+            }, 
+            {
+                "name":"Electric Motor", 
+                "type":"engine.prop", 
+                "number":8, 
+                "efficiency":0.98, 
+                "mass":41.5, 
+                "max_power":380000
+            }
+        ], 
+        "segments":[
+            {
+                "name":"Taxi at Hospital", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical Takeoff", 
+                "base_drag_coefficient":0.061007100500342096
+            }, 
+            {
+                "name":"Hover", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical to Horizontal Transition", 
+                "base_drag_coefficient":0.058314700849740088
+            }, 
+            {
+                "name":"Climb", 
+                "base_drag_coefficient":0.056118806221379818
+            }, 
+            {
+                "name":"Horizontal Cruise", 
+                "base_drag_coefficient":0.055262559341484857
+            }, 
+            {
+                "name":"Approach", 
+                "base_drag_coefficient":0.055843485719499542
+            }, 
+            {
+                "name":"Horizontal to Vertical Transition", 
+                "base_drag_coefficient":0.058011567715464882
+            }, 
+            {
+                "name":"Vertical Landing at Site", 
+                "base_drag_coefficient":0.023274487291494915
+            }, 
+            {
+                "name":"Passenger Tending For Pickup", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Passenger Collection", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical Takeoff", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Hover", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical to Horizontal Transition", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Climb", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Horizontal Cruise", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Approach", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Horizontal to Vertical Transition", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical Landing at Hospital", 
+                "base_drag_coefficient":0.023274487291494915
+            }, 
+            {
+                "name":"Passenger Tending For Unloading", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Passenger Unloading Step", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical Takeoff", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Hover", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical to Horizontal Transition", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Climb", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Horizontal Cruise", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Approach", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Horizontal to Vertical Transition", 
+                "base_drag_coefficient":0
+            }, 
+            {
+                "name":"Vertical Landing at Base", 
+                "base_drag_coefficient":0.023274487291494915
+            }, 
+            {
+                "name":"Final Post Landing Checkups", 
+                "base_drag_coefficient":0
+            }
+        ], 
+        "mass":3620.9814562754104
+    }, 
+    "energy":{
+        "networks":[
+            {
+                "name":"Electric Energy Network @ vertical flight", 
+                "layout":[
+                    {
+                        "name":"Battery"
+                    }, 
+                    {
+                        "name":"Electric Motor"
+                    }, 
+                    {
+                        "name":"Rotor"
+                    }
+                ]
+            }, 
+            {
+                "name":"Hybrid Energy Network", 
+                "layout":[
+                    {
+                        "name":"Fuel Tank"
+                    }, 
+                    {
+                        "name":"Turboshaft", 
+                        "brake_specific_fuel_consumption":1.01E-7
+                    }, 
+                    {
+                        "name":"Gearbox"
+                    }, 
+                    {
+                        "name":"Generator"
+                    }, 
+                    {
+                        "name":"Electric Motor"
+                    }, 
+                    {
+                        "name":"Rotor"
+                    }
+                ]
+            }, 
+            {
+                "name":"Hybrid Energy Network @Cruise", 
+                "layout":[
+                    {
+                        "name":"Fuel Tank"
+                    }, 
+                    {
+                        "name":"Turboshaft", 
+                        "brake_specific_fuel_consumption":1.01E-7
+                    }, 
+                    {
+                        "name":"Gearbox"
+                    }, 
+                    {
+                        "name":"Generator"
+                    }, 
+                    {
+                        "name":"Electric Motor", 
+                        "max_power":260000
+                    }, 
+                    {
+                        "name":"Rotor"
+                    }
+                ]
+            }
+        ]
+    }
+}
