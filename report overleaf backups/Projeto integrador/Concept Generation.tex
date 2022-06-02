@@ -1,0 +1,99 @@
+\section{Concept Generation (Design)}
+\subsection{Objective}
+Design duma aeronave para funcionar como ambulância aérea. Pretende-se que seja melhor que as ambulâncias aérea atuais de asa rotativa em termos de ruído dentro de espaços urbanos, consumo de combustível, e tempo de resposta a uma emergência.\par
+O design híbrido escolhido pretende diminuir o ruído ao usar baterias em descolagem e voo perto do solo, reduzindo o ruído das turbinas geradoras que são utilizadas apenas para voo cruzeiro. O design tilt-rotor permite aumentar significativamente a eficiência em voo horizontal e permite um aumento moderado da velocidade de cruzeiro quando comparado com helicópteros convencionais. \par
+Deverá ter pelo menos o mesmo alcance que o AW 139, bem como levar o mesmo número de passageiros e crew members.\par
+Deverá operar em zonas suburbanas e urbanas.\par
+Dada a infraestrutura atual, deverá ocupar no máximo um circulo de 14 metros (limite imposto por heliportos existentes)\par
+Deverá carregar pelo menos 150kg de material médico (dados de \textit{market study} - valor baseado no \textit{weight limit} para equipamento médico para aeronaves como Citations, Pilatus PC12 e Eurocopter AS350, bem como no documento \textit{Specification of Equipments for ERS Ambulance}, NHM) %INSERIR REFERÊNCIA BIBLIOGRAFIA 
+%(dados da market study team - Joana help)
+
+Deverá ter um tempo de preparação para descolagem menor do que helicópteros atuais, o que se pretende alcançar ao usar motores elétricos em vez de um sistema puramente mecânico.\par
+
+\subsection{Mission}
+A overall missão que este design procura realizar é a de: 
+\begin{itemize}
+    \item Ir do hospital para o local da emergência
+    \item Assistência médica
+    \item Levar o paciente para o hospital onde receberá assistência (não necessariamente o de partida)
+    \item Regressar à base
+\end{itemize}
+Esta é partida em secções menores:
+\begin{itemize}
+    \item 
+    \item
+    \item
+    \item
+    \item
+\end{itemize}
+\subsection{Cenas de referância}
+ Aeronaves de referencia
+    \begin{itemize}
+        \item AW 139
+         \begin{itemize}
+            \item Dimensionamente geral duma ambulância aérea
+            \item Generator reference - quantidade (2 geradores) e potencia (2MW cada)
+            \item Shape da fuselagem
+            \item Cargo
+            \item Reference for how good the replacement has to be - we are trying to match or beat this helicopter in terms of noise fuel and everything
+            \item Dry mass/structural weight
+        \end{itemize}
+        
+        \item XV 15
+            \begin{itemize}
+            \item Dimensionamento de motores e combustivel estimado para um veiculo VTOL de 6T de MTOW
+            \item Dimensionamento de fuselagem e cargo para veiculos VTOL
+            \item Inspiração -> Honestly, deviamos só usar o XV-15 e pronto
+            \item 
+        \end{itemize}
+        
+        \item V-22
+        \begin{itemize}
+            \item Fonte de vários dados sobre caracteristicas de VTOL e perfis de voo para este tipo de veiculo
+        \end{itemize}\textbf{}
+        
+        \item V-280
+        \begin{itemize}
+            \item Estudo de mecanismos alternativos para tiltrotors
+        \end{itemize}
+        
+        \item X-19
+        \begin{itemize}
+            \item Estudo sobre a viabilidade de rotores distribuidos em configuração de quadcopter
+            \item inspiração
+        \end{itemize}
+        
+        \item Lillium Jet
+        \begin{itemize}
+            \item Inspiração para ducteded distribution propultion
+            \item motores eletrico + propeller em cima da asa. Um motor por propeller
+            \item esteira convergente (no ducto)
+        \end{itemize}
+        \item Sugar Volt
+        \begin{itemize}
+            \item Descritização da massa - uso duma tabela com as massas de vários componentes para ter ideia dos rácios entre a massa total e a asa e a fuselagem.
+        \end{itemize}
+    \end{itemize}
+Peças
+\begin{itemize}
+    \item Motores electricos (referência de mercado)
+    \begin{itemize}
+        \item 17 kg
+        \item 80kW
+    \end{itemize}
+\end{itemize}
+\section{Designs}
+As primeiras proposta teviram as seguintes ideias em mente:
+\begin{itemize}
+    \item Ocupar um circulo de 14m
+    \item Utilizar conventional wing ou tadem wing
+    \item Asa alta
+    \item 8 motores eletricos (4 em cada asa no conventional, 2 em cada no tandem)
+    \item 2 geradores eletricos de 1 MW cada
+    \item Porta lateral
+    \item T tail configuration on the conventional wing design
+    \item Fuselage shape baseada no AW 139
+    \item Tilt rotor
+\end{itemize}
+
+Baseado nisto, foram propostas mais duas configurações. Estão são quase idênticas às em cima descritas, mas utilizam multiplas ducted fans para boundary layer ingestion, baseado no lillium jet. Também estas fans têm um mecanismo de tilt para permitir VTOL bem como horizontal cruise flight com essas na horizontal.

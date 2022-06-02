@@ -1,0 +1,16 @@
+\FloatBarrier 
+ \begin{table}[h] 
+ \begin{adjustbox}{width=1\textwidth} 
+ \begin{tabular}{|c|c|c|c|}
+ \hline 
+
+\makecell{name: Crew ; \\ type: mass.point ; \\ mass: 200 ; \\ } & \makecell{name: Passengers ; \\ type: mass.point ; \\ mass: 500 ; \\ } & \makecell{name: Avionics ; \\ type: mass.point ; \\ mass: 5 ; \\ } & \makecell{name: Payload Bay ; \\ type: mass.point ; \\ mass: 10 ; \\ }\\ \hline \\ 
+\makecell{name: Fuselage ; \\ type: fuselage ; \\ interf\_factor: 1.0 ; \\ diameter: 1.0 ; \\ length: 4.0 ; \\ mass: 800 ; \\ } & \makecell{name: Main Wing ; \\ type: wing.main ; \\ interf\_factor: 1.0 ; \\ aspect\_ratio: 7.0 ; \\ mean\_chord: 3.0 ; \\ oswald\_efficiency: 0.85 ; \\ airfoil:   type :  naca0012  \\   tc\_max : 0.15 \\   xc\_max : 0.3 \\   lift\_slope\_coefficient : 6.2 \\   cl\_max : 2.0  ; \\ sweep\_le: 10.0 ; \\ sweep\_c4: 15.0 ; \\ sweep\_tc\_max: 20.0 ; \\ mass: 200 ; \\ } & \makecell{name: Horizontal Tail ; \\ type: wing.htail ; \\ interf\_factor: 1.0 ; \\ aspect\_ratio: 5.0 ; \\ mean\_chord: 0.5 ; \\ oswald\_efficiency: 0.85 ; \\ airfoil:   type :  naca0012  \\   tc\_max : 0.15 \\   xc\_max : 0.3 \\   lift\_slope\_coefficient : 6.2 \\   cl\_max : 2.0  ; \\ sweep\_le: 10.0 ; \\ sweep\_c4: 15.0 ; \\ sweep\_tc\_max: 20.0 ; \\ mass: 50 ; \\ } & \makecell{name: Vertical Tail ; \\ type: wing.vtail ; \\ interf\_factor: 1.0 ; \\ aspect\_ratio: 5.0 ; \\ mean\_chord: 1.0 ; \\ oswald\_efficiency: 0.85 ; \\ airfoil:   type :  naca0012  \\   tc\_max : 0.15 \\   xc\_max : 0.3 \\   lift\_slope\_coefficient : 6.2 \\   cl\_max : 2.0  ; \\ sweep\_le: 10.0 ; \\ sweep\_c4: 15.0 ; \\ sweep\_tc\_max: 20.0 ; \\ mass: 50 ; \\ }\\ \hline \\ 
+\makecell{name: Turboshaft ; \\ type: engine.prop ; \\ efficiency: 0.8 ; \\ mass: 100 ; \\ max\_power: 210000 ; \\ } & \makecell{name: 4-stroke Piston Engine ; \\ type: engine.prop ; \\ efficiency: 0.8 ; \\ mass: 100 ; \\ max\_power: 200000 ; \\ } & \makecell{name: Jet Engine ; \\ type: engine.jet ; \\ mass: 200 ; \\ max\_power: 120000 ; \\ } & \makecell{name: Battery ; \\ type: energy.electric ; \\ specific\_energy: 360000.0 ; \\ efficiency: 0.9 ; \\ reserve: 0.2 ; \\ mass: 0 ; \\ }\\ \hline \\ 
+\makecell{name: Fuel Tank ; \\ type: energy.fuel ; \\ reserve: 0.06 ; \\ mass: 0 ; \\ } & \makecell{name: Rotor ; \\ type: driver.rotor.main ; \\ number: 2 ; \\ number\_blades: 5 ; \\ radius: 2 ; \\ rotor\_solidity: 0.08 ; \\ induced\_power\_factor: 1.15 ; \\ base\_drag\_coefficient: 0.02 ; \\ tip\_velocity: 240.1 ; \\ efficiency: 0.6 ; \\ mass: 20 ; \\ } & \makecell{name: Propeller ; \\ type: driver.rotor ; \\ number: 2 ; \\ number\_blades: 4 ; \\ radius: 2.3 ; \\ tip\_velocity: 240.1 ; \\ efficiency: 0.6 ; \\ mass: 10 ; \\ } & \makecell{name: Gearbox ; \\ type: gearbox ; \\ efficiency: 0.95 ; \\ mass: 5 ; \\ }\\ \hline \\ 
+\makecell{name: Generator ; \\ type: generator ; \\ efficiency: 0.96 ; \\ mass: 50 ; \\ } & \makecell{name: Electric Motor ; \\ type: engine.prop ; \\ number: 3 ; \\ efficiency: 0.97 ; \\ mass: 50 ; \\ max\_power: 200000 ; \\ } &  & \\ \hline \\ 
+\end{tabular} 
+ \end{adjustbox} 
+ \end{table} 
+ \FloatBarrier 
+

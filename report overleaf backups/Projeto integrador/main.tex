@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{units}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage{commath}
+\usepackage{empheq}
+\usepackage{xcolor}
+\usepackage[nottoc]{tocbibind}
+\usepackage{url}
+\usepackage[portuguese]{babel}
+\usepackage{xurl}
+\usepackage{multicol}
+\numberwithin{equation}{section}
+\usepackage{systeme,mathtools}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\usepackage{ulem}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{biblatex}
+\usepackage{placeins}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\addbibresource{bib.bib}
+
+\date{March 2021}
+\begin{document}
+
+
+
+\input{capa}
+
+\fancypagestyle{toc_style}{
+\fancyhf{}
+%\rhead{\includegraphics[width=15mm]{Imagens/logo_ist.png}}
+%\fancyhead[R]{\Large \textbf{Instituto Superior Técnico}  \\ \large \textbf{Projeto Integrador}}
+
+\lfoot{Lisbon DIA MÊS, 2022}
+}
+
+\input{Índice}
+\pagebreak
+\setcounter{page}{1}
+
+\input{Market Study}
+\pagebreak
+\input{Concept Generation}
+\input{semana1}
+\input{semana2}
+\input{semana3}
+\input{semana4}
+\pagebreak
+\printbibliography
+\end{document}
