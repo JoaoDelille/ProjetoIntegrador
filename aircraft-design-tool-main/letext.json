@@ -987,7 +987,7 @@
                 "name":"Vertical Tail", 
                 "type":"wing.vtail", 
                 "interf_factor":1, 
-                "aspect_ratio":4.932669, 
+                "aspect_ratio":3.5, 
                 "mean_chord":1.000445, 
                 "oswald_efficiency":0.85, 
                 "airfoil":{
@@ -1001,64 +1001,64 @@
                 "sweep_c4":15, 
                 "sweep_tc_max":20, 
                 "mass":50, 
-                "span":4.934864037705, 
-                "area_ref":4.9370600522017787, 
-                "area_wet":10.145658407274656, 
+                "span":3.5015575, 
+                "area_ref":3.5031156930875, 
+                "area_wet":7.1989027492948132, 
                 "segments":[
                     {
                         "name":"Taxi at Hospital", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }, 
                     {
                         "name":"Vertical Takeoff", 
-                        "base_drag_coefficient":0.00037615746578388082, 
-                        "lift_slope_coefficient":4.014981118933675
+                        "base_drag_coefficient":0.0002669044142721887, 
+                        "lift_slope_coefficient":3.4845603947235384
                     }, 
                     {
                         "name":"Hover", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }, 
                     {
                         "name":"Vertical to Horizontal Transition", 
-                        "base_drag_coefficient":0.00079991147099484506, 
-                        "lift_slope_coefficient":4.02552459111363
+                        "base_drag_coefficient":0.000567581191537879, 
+                        "lift_slope_coefficient":3.4920427349189711
                     }, 
                     {
                         "name":"Climb", 
-                        "base_drag_coefficient":0.00081659011398045047, 
-                        "lift_slope_coefficient":4.0593601238853072
+                        "base_drag_coefficient":0.00057941560622283323, 
+                        "lift_slope_coefficient":3.5159862550315943
                     }, 
                     {
                         "name":"Horizontal Cruise", 
-                        "base_drag_coefficient":0.00083353893733930718, 
-                        "lift_slope_coefficient":4.1241315715959761
+                        "base_drag_coefficient":0.000591441728745143, 
+                        "lift_slope_coefficient":3.561529557773671
                     }, 
                     {
                         "name":"Approach", 
-                        "base_drag_coefficient":0.0008167632028165772, 
-                        "lift_slope_coefficient":4.0656616635032243
+                        "base_drag_coefficient":0.00057953842227362524, 
+                        "lift_slope_coefficient":3.520433965769747
                     }, 
                     {
                         "name":"Horizontal to Vertical Transition", 
-                        "base_drag_coefficient":0.00080001917147632534, 
-                        "lift_slope_coefficient":4.0270106647247683
+                        "base_drag_coefficient":0.00056765761095405737, 
+                        "lift_slope_coefficient":3.493096536837633
                     }, 
                     {
                         "name":"Vertical Landing at Site", 
-                        "base_drag_coefficient":0.00036042280550918588, 
-                        "lift_slope_coefficient":4.0150181092949353
+                        "base_drag_coefficient":0.000255739807248804, 
+                        "lift_slope_coefficient":3.4845866631919606
                     }, 
                     {
                         "name":"Passenger Tending For Pickup", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }, 
                     {
                         "name":"Passenger Collection", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }, 
                     {
                         "name":"Vertical Takeoff", 
@@ -1097,18 +1097,18 @@
                     }, 
                     {
                         "name":"Vertical Landing at Hospital", 
-                        "base_drag_coefficient":0.00036042280550918588, 
-                        "lift_slope_coefficient":4.0150181092949353
+                        "base_drag_coefficient":0.000255739807248804, 
+                        "lift_slope_coefficient":3.4845866631919606
                     }, 
                     {
                         "name":"Passenger Tending For Unloading", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }, 
                     {
                         "name":"Passenger Unloading Step", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }, 
                     {
                         "name":"Vertical Takeoff", 
@@ -1147,13 +1147,13 @@
                     }, 
                     {
                         "name":"Vertical Landing at Base", 
-                        "base_drag_coefficient":0.00036042280550918588, 
-                        "lift_slope_coefficient":4.0150181092949353
+                        "base_drag_coefficient":0.000255739807248804, 
+                        "lift_slope_coefficient":3.4845866631919606
                     }, 
                     {
                         "name":"Final Post Landing Checkups", 
                         "base_drag_coefficient":0, 
-                        "lift_slope_coefficient":4.0148602917234966
+                        "lift_slope_coefficient":3.4844745891860049
                     }
                 ]
             }, 
@@ -1242,7 +1242,7 @@
             }, 
             {
                 "name":"Vertical Takeoff", 
-                "base_drag_coefficient":0.061007100500342096
+                "base_drag_coefficient":0.060683911399058342
             }, 
             {
                 "name":"Hover", 
@@ -1250,27 +1250,27 @@
             }, 
             {
                 "name":"Vertical to Horizontal Transition", 
-                "base_drag_coefficient":0.058314700849740088
+                "base_drag_coefficient":0.057617710011369186
             }, 
             {
                 "name":"Climb", 
-                "base_drag_coefficient":0.056118806221379818
+                "base_drag_coefficient":0.055407282698106977
             }, 
             {
                 "name":"Horizontal Cruise", 
-                "base_drag_coefficient":0.055262559341484857
+                "base_drag_coefficient":0.054536267715702379
             }, 
             {
                 "name":"Approach", 
-                "base_drag_coefficient":0.055843485719499542
+                "base_drag_coefficient":0.055131811377870689
             }, 
             {
                 "name":"Horizontal to Vertical Transition", 
-                "base_drag_coefficient":0.058011567715464882
+                "base_drag_coefficient":0.057314483033898078
             }, 
             {
                 "name":"Vertical Landing at Site", 
-                "base_drag_coefficient":0.023274487291494915
+                "base_drag_coefficient":0.023169804293234533
             }, 
             {
                 "name":"Passenger Tending For Pickup", 
@@ -1310,7 +1310,7 @@
             }, 
             {
                 "name":"Vertical Landing at Hospital", 
-                "base_drag_coefficient":0.023274487291494915
+                "base_drag_coefficient":0.023169804293234533
             }, 
             {
                 "name":"Passenger Tending For Unloading", 
@@ -1350,7 +1350,7 @@
             }, 
             {
                 "name":"Vertical Landing at Base", 
-                "base_drag_coefficient":0.023274487291494915
+                "base_drag_coefficient":0.023169804293234533
             }, 
             {
                 "name":"Final Post Landing Checkups", 
