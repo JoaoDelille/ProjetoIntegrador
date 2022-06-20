@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{units}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage{commath}
+\usepackage{empheq}
+\usepackage{xcolor}
+\usepackage[nottoc]{tocbibind}
+\usepackage{url}
+\usepackage[portuguese]{babel}
+\usepackage{xurl}
+\usepackage{multicol}
+\numberwithin{equation}{section}
+\usepackage{systeme,mathtools}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\usepackage{ulem}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{biblatex}
+\usepackage{placeins}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usepackage{comment}
+\addbibresource{bib.bib}
+\usepackage{listings}
+\usepackage{minted}
+\date{March 2021}
+\usepackage[inline]{enumitem}
+
+
+
+
+
+
+
+\begin{document}
+
+
+
+\input{0 - Capa}
+
+\fancypagestyle{toc_style}{
+\fancyhf{}
+%\rhead{\includegraphics[width=15mm]{Imagens/logo_ist.png}}
+%\fancyhead[R]{\Large \textbf{Instituto Superior Técnico}  \\ \large \textbf{Projeto Integrador}}
+
+\lfoot{Lisbon, 1$^{st}$ July 2022}
+}
+
+\input{0 - Contents}
+\pagebreak
+\setcounter{page}{1}
+%\begin{comment}
+    \input{1 - Introduction}
+    \input{2 - Market Study}
+    %\pagebreak
+    \input{3 - Concept Generation}
+    \input{4 - Analytical Hierarchy Process}
+    \input{5 - Mission Profile}
+    \input{6 - Aircraft Sizing & Design Point}
+    \input{7 - Stability}
+    \input{8 - Flight Envelope}
+    \input{9 - Noise & Pollutant Emissions}
+    \input{10 - CAD Design}
+    \input{11 - Costs}
+    \input{12 - Conclusion}
+    \input{semana1}
+    \input{semana2}
+    \input{semana3}
+    \input{semana4}
+    \input{semana5 e 6}
+    \input{semana7}
+%\end{comment}
+\input{semana9}
+\pagebreak
+\printbibliography
+
+\end{document}
