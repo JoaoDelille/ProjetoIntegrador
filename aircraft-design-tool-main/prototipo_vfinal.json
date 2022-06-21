@@ -464,7 +464,7 @@
                     "type": "wing.vtail",
                     "interf_factor": 1.0,
                     "aspect_ratio": 3.5,
-                    "mean_chord": 1.000445,
+                    "mean_chord": 1.00,
                     "oswald_efficiency": 0.85,
                     "airfoil": {
                         "type": "naca0012",
@@ -517,7 +517,7 @@
                     "type": "driver.rotor.main",
                     "number": 8,
                     "number_blades": 3,
-                    "radius": 1.04,
+                    "radius": 1.2,
                     "rotor_solidity": 0.08,
                     "induced_power_factor": 1.15,
                     "base_drag_coefficient": 0.02,
