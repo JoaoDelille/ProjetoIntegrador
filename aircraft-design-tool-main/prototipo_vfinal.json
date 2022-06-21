@@ -517,11 +517,11 @@
                     "type": "driver.rotor.main",
                     "number": 8,
                     "number_blades": 3,
-                    "radius": 1.041124,
+                    "radius": 1.04,
                     "rotor_solidity": 0.08,
                     "induced_power_factor": 1.15,
                     "base_drag_coefficient": 0.02,
-                    "tip_velocity": 270.0,
+                    "tip_velocity": 170.0,
                     "efficiency": 0.9,
                     "mass": 25.0
                 },
@@ -531,7 +531,7 @@
                     "number": 8,
                     "number_blades": 8,
                     "radius": 0.8,
-                    "tip_velocity": 270.0,
+                    "tip_velocity": 170.0,
                     "efficiency": 0.9,
                     "mass": 25.0
                 },
