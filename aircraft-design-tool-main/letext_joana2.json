@@ -1183,13 +1183,13 @@
                 "specific_energy":576000, 
                 "efficiency":0.9, 
                 "reserve":0.2, 
-                "mass":138.67162923072357
+                "mass":182.89332682859998
             }, 
             {
                 "name":"Fuel Tank", 
                 "type":"energy.fuel", 
                 "reserve":0.06, 
-                "mass":480.8339883730871
+                "mass":488.01065570201308
             }, 
             {
                 "name":"Rotor", 
@@ -1200,7 +1200,7 @@
                 "rotor_solidity":0.08, 
                 "induced_power_factor":1.15, 
                 "base_drag_coefficient":0.02, 
-                "tip_velocity":1, 
+                "tip_velocity":300, 
                 "efficiency":0.9, 
                 "mass":25
             }, 
@@ -1357,7 +1357,7 @@
                 "base_drag_coefficient":0
             }
         ], 
-        "mass":4033.0899823477093
+        "mass":4093.763286338944
     }, 
     "energy":{
         "networks":[

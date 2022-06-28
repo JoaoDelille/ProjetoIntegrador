@@ -1,6 +1,5 @@
-function [SPL_max] = noise_estimation(m,NB,NR,r,s,t_c_max,Vtip,Phr,Thr,alt,rho,a)
-  %% Noise estimation
-  % Inputs:
+function [SPL_max] = noise_estimation(m,NB,NR,r,s,t_c_max,Vtip,Phr,Thr,alt,rho,a) 
+%% Noise estimation
    m=1 %- Harmonic number (-)
    NB=3 %- Number of blades (m) (usually between 2 and 5)
    NR=8 %- Number of rotors (-) (ASSUMPTION: ALL ROTORS ARE THE SAME)
@@ -13,7 +12,6 @@ function [SPL_max] = noise_estimation(m,NB,NR,r,s,t_c_max,Vtip,Phr,Thr,alt,rho,a
    alt=500*0.3048 %- altitude away from the observer (m) (usually for helicopters is an altitude of 500 ft)
    rho=1.20718 %- air density (kg/m3)
    a=339.709 %- speed of sound (m/s)
-   
 
   c = pi()*r*s/NB;                    % (m) Blade's mean chord
   t = t_c_max*c;                      % (m) Blade's maximum thickness
@@ -64,9 +62,5 @@ function [SPL_max] = noise_estimation(m,NB,NR,r,s,t_c_max,Vtip,Phr,Thr,alt,rho,a
 
     %% Total Noise
     SPL(i) = 10*log10(pd_rot + pd_vortex);
-    SPL_rot(i)=10*log10(pd_rot);
-    SPL_vortex(i)=10*log10(pd_vortex);
   end
   SPL_max = max(SPL);
-  SPLrot_max= max(SPL_rot)
-  SPLvortex_max= max(SPL_vortex)

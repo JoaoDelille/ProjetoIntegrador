@@ -1,4 +1,4 @@
-% Aircraft design tool
+%Aircraft design tool
 %
 % Mario Bras (mbras@uvic.ca) and Ricardo Marques (ricardoemarques@uvic.ca) 2019
 %

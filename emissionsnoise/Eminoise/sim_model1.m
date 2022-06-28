@@ -2,18 +2,16 @@ function f = sim_model(x)
   f = [];
 
   %% Inputs, Design Choices and Design Variables
-   x(1)=10                      %- lift to drag ratio (-)
-   x(2)=(4000/(8*pi* 1.2^2))*0.204816144 %- disk loading (lb/ft2)
-   x(3)=14                      %- wing's aspect ratio (-)
-   x(4)=194.3844                %- cruise speed (kts)      (100 m/s)
-   x(5)=389.02969068            %- 1 trip range (nm)       (7.204829871446611e+05m)
-   x(6)=661.4                   %- payload (lb)            (300 kg)
-   x(7)=0.5                     %- Mach number at the tip of the blade (-)(b:270m/s)
-   x(8)=0.08                    %- solidity (-)
-   x(9)=0.12                    %- maximum thickness to chord ratio (-)
-   x(10)=260000/(260000+210000) %- hybridization factor in cruise (-)
-
-  
+  % x(1) - lift to drag ratio (-)
+  % x(2) - disk loading (lb/ft2)
+  % x(3) - wing's aspect ratio (-)
+  % x(4) - cruise speed (kts)
+  % x(5) - 1 trip range (nm)
+  % x(6) - payload (lb)
+  % x(7) - Mach number at the tip of the blade (-)
+  % x(8) - solidity (-)
+  % x(9) - maximum thickness to chord ratio (-)
+  % x(10) - hybridization factor in cruise (-)
 
   % Configuration type (LC - Lift+Cruise; TR - Tilt-rotor; TW - Tilt-wing)
   config = 'TR';
@@ -21,11 +19,11 @@ function f = sim_model(x)
   if strcmpi(config,'LC')
     eta_p = 0.8;	% Cruise propeller's efficiency
     fws = 0.28;		% Structural factor
-    NR = 8;         % Number of rotors
+    NR = 8;       % Number of rotors
   elseif strcmpi(config,'TR')
-	eta_p = 0.76;	% Cruise propeller's efficiency 0.76
-    fws = 0.3;		% Structural factor 0.3
-    NR = 8;         % Number of rotors 12      
+	  eta_p = 0.76;	% Cruise propeller's efficiency
+    fws = 0.3;		% Structural factor
+    NR = 12;      % Number of rotors
   else
     eta_p = 0.76;	% Cruise propeller's efficiency
     fws = 0.3;		% Structural factor
@@ -41,12 +39,12 @@ function f = sim_model(x)
     n_cs = 0.429;		% Efficiency of the combustion system
   else
     HC = x(10);			% Hybridization factor in cruise (0 - all-combustion; 1 - all-electric)
-    n_cs = 0.8;         % Efficiency of the combustion system 0.429
-    n_es = 0.9;         % Efficiency of the electric system 0.862
+    n_cs = 0.429;		% Efficiency of the combustion system
+    n_es = 0.862;		% Efficiency of the electric system
   end
 
   % Fuel Selection (Fuel's specific energy density and emission in production phase)
-  fuel = 'ATJ_wheat_straw';
+  fuel = 'HEFA_jatropha';
   if strcmpi(fuel,'FT_SPK_camelina')
     Efuel = 44.2; % Specific Energy Density (MJ/kg))
     Fuel_production = 30.7; % (gCO2eq/MJ)
@@ -75,9 +73,9 @@ function f = sim_model(x)
   end
 
   % Batteries related inputs
-  Ebat = 270;     % energy specific density (W.h/kg) 500 270 450
-  Ebat_r = 0.2;   % batteries reserve (-) 0.3
-  N_cycles = 500; % limit number of battery cycles (-) 500 500 1000
+  Ebat = 500;     % energy specific density (W.h/kg)
+  Ebat_r = 0.3;   % batteries reserve (-)
+  N_cycles = 500; % limit number of battery cycles (-)
 
 
   % Maximum allowable values
@@ -89,7 +87,7 @@ function f = sim_model(x)
   g = 9.80665;          % Gravity acceleration (m/s2)
 
   % Mission related inputs
-  Nm = 4;                     % Number of mission
+  Nm = 4;                     	% Number of mission
   Reserve = 20/60;            	% Reserve time (h)
   HoverTime = 120*Nm/3600;    	% Total hover time (h)
   Vc = x(4)*0.5144;             % Cruise speed (m/s)
@@ -104,7 +102,7 @@ function f = sim_model(x)
   a = 351.906;          % Speed of sound (m/s) - SL, ISA + 20ºC Sea Level Conditions
 
   % Electric Motors related inputs
-  n_ES = 0.862;	  % Electric system efficiency (-)
+  n_ES = 0.862;		% Electric system efficiency (-)
   PWe = 5;        % Power to weight ratio (kW/kg)
   PWesc = 20;     % Power to weight ratio (kW/kg)
   MI = 0.55;      % Electric motor integration factor (-)
@@ -143,8 +141,8 @@ function f = sim_model(x)
     Th = MTOM0*g;                   % Thrust in hover (N)
     r = sqrt(Th/(pi()*NR*DL));      % Rotor's radius (m) - Assumption: all rotors are the same
     % Hover (Out of Ground Effect)
-    Thr = Th/NR                    % Thrust in hover per rotor (N) - Assumption: all rotors contribute equally to the total thrust
-    Phr = Thr*(ki*sqrt(DL/(2*rho)) + (rho*Vtip*Vtip*Vtip/DL)*(s*cd0/8)) % Hover power per rotor (W)
+    Thr = Th/NR;                    % Thrust in hover per rotor (N) - Assumption: all rotors contribute equally to the total thrust
+    Phr = Thr*(ki*sqrt(DL/(2*rho)) + (rho*Vtip*Vtip*Vtip/DL)*(s*cd0/8)); % Hover power per rotor (W)
     Ph = NR*Phr;                    % Hover power (W)
     FoM = Thr*sqrt(DL/(2*rho))/Phr; % Figure of merit (-)
     % Vertical Climb
@@ -240,7 +238,7 @@ function f = sim_model(x)
 
 
   %% CO2-eq Emissions
-  Electric_mix = 291;												% CO2-eq emissions per kW.h of electric energy (gCO2eq/(kW.h))
+  Electric_mix = 294;												% CO2-eq emissions per kW.h of electric energy (gCO2eq/(kW.h))
   Fuel_emissions = 8.887/142.2;                                     % CO2-eq emissions per MJ of fuel (gCO2eq/MJ)
   Emissions_energy = ((Energy_bat/1000)*Electric_mix + (Energy_fuel*3.6/1000)*Fuel_emissions)*N_cycles/1000; % CO2-eq emissions due to energy consumption (kgCO2eq)
   Battery_production = 80.8*1000;									% CO2-eq emissions per kW.h of battery produced (gCO2eq/(kW.h))
