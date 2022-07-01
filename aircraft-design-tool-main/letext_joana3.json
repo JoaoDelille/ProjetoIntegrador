@@ -1183,13 +1183,13 @@
                 "specific_energy":576000, 
                 "efficiency":0.9, 
                 "reserve":0.3, 
-                "mass":151.54974354388918
+                "mass":147.636969853966
             }, 
             {
                 "name":"Fuel Tank", 
                 "type":"energy.fuel", 
                 "reserve":0.06, 
-                "mass":421.08114344801419
+                "mass":484.28560585404574
             }, 
             {
                 "name":"Rotor", 
@@ -1357,7 +1357,7 @@
                 "base_drag_coefficient":0
             }
         ], 
-        "mass":4000.3606783086771
+        "mass":4062.2708022304405
     }, 
     "energy":{
         "networks":[
@@ -1383,7 +1383,7 @@
                     }, 
                     {
                         "name":"Turboshaft", 
-                        "brake_specific_fuel_consumption":1.01E-8
+                        "brake_specific_fuel_consumption":1.01E-7
                     }, 
                     {
                         "name":"Gearbox"
@@ -1407,7 +1407,7 @@
                     }, 
                     {
                         "name":"Turboshaft", 
-                        "brake_specific_fuel_consumption":1.01E-8
+                        "brake_specific_fuel_consumption":1.01E-7
                     }, 
                     {
                         "name":"Gearbox"

@@ -30,7 +30,7 @@ N_cycles=500;
 Battery_production = 147.7*1000;           % CO2-eq emissions per kW.h of battery produced (gCO2eq/(kW.h))
 %Battery_production = 80.8*1000;           % CO2-eq emissions per kW.h of battery produced (gCO2eq/(kW.h))
 
-Fuel_production= 30.4;                      % (gCO2eq/MJ)
+Fuel_production= 30.4;                     % (gCO2eq/MJ)
 
 %Emissions
 Emissions_energy = ((Energy_bat/1000)*Electric_mix + (Energy_fuel*3.6/1000)*Fuel_emissions)*N_cycles/1000 % CO2-eq emissions due to energy consumption (kgCO2eq)
